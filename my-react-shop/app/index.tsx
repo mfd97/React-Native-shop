@@ -22,7 +22,7 @@ export default function Index() {
           <View key={index} style={styles.productCard}>
             <Image source={product.image} style={styles.productImage} />
             <Text style={styles.productName}>{product.name}</Text>
-            <Text style={styles.productPrice}>${product.price.toFixed(2)}</Text>
+            <Text style={styles.productPrice}>{product.price.toFixed(2)} KWD</Text>
           </View>
         ))}
       </View>
