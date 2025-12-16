@@ -31,7 +31,7 @@ export default function Index() {
 }
 const styles = StyleSheet.create({
   heading: {
-    fontSize: 32,
+    fontSize: 50,
     fontWeight: "bold",
     marginBottom: 20,
     color: "#000",
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
   image: {
     width: 300,
     height: 300,
-    marginBottom: 20,
+    marginBottom: 1,
     resizeMode: "contain",
   },
   productsContainer: {
