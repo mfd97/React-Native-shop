@@ -1,7 +1,6 @@
+import ProductItem from "@/components/ProductItem";
 import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 import { products } from "../data/products";
-import ProductItem from "@/components/ProductItem";
-< ProductItem />
 
 const shopImage = require("../assets/images/mylogo.jpg");
 
@@ -21,7 +20,7 @@ export default function Index() {
       
       <View style={styles.productsContainer}>
         {products.map((product, index) => (
-    
+          <ProductItem key={index} product={product} index={index} />
         ))}
       </View>
     </ScrollView>
